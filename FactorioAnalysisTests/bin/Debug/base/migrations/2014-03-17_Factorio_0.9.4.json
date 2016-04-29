@@ -1,0 +1,10 @@
+{
+  "entity":
+  [
+    ["logistic-chest-provider", "logistic-chest-active-provider"]
+  ],
+  "item":
+  [
+    ["logistic-chest-provider", "logistic-chest-active-provider"]
+  ]
+}

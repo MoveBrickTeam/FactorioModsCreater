@@ -1,0 +1,594 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;ClassItem.Parent" xml:space="preserve">
+    <value>TopPanel</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Logistical.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Cancel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Metarial.Parent" xml:space="preserve">
+    <value>ClassChoose</value>
+  </data>
+  <data name="Metarial.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="TopPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SavePathLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 27</value>
+  </data>
+  <data name="&gt;&gt;SaveDirect.Name" xml:space="preserve">
+    <value>SaveDirect</value>
+  </data>
+  <data name="Weapon.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="TopPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ClassChoose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="SavePanel.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Metarial.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Confirm.Name" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="&gt;&gt;TopPanel.Name" xml:space="preserve">
+    <value>TopPanel</value>
+  </data>
+  <data name="&gt;&gt;ClassChoose.Name" xml:space="preserve">
+    <value>ClassChoose</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Confirm.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;SavePathLabel.Name" xml:space="preserve">
+    <value>SavePathLabel</value>
+  </data>
+  <data name="SavePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Logistical.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Production.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.Name" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;SaveDirect.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SavePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>527, 21</value>
+  </data>
+  <data name="Cancel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="MainPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&Lt;?xml version="1.0" encoding="utf-16"?&gt;&Lt;TableLayoutSettings&gt;&Lt;Controls&gt;&Lt;Control Name="SavePanel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&Lt;Control Name="TopPanel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&Lt;/Controls&gt;&Lt;Columns Styles="Percent,100" /&gt;&Lt;Rows Styles="Absolute,508,Percent,100" /&gt;&Lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="Weapon.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ClassChoose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TopPanel.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>新建</value>
+  </data>
+  <data name="&gt;&gt;SavePath.Parent" xml:space="preserve">
+    <value>SavePanel</value>
+  </data>
+  <data name="Cancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>713, 30</value>
+  </data>
+  <data name="&gt;&gt;SavePanel.Name" xml:space="preserve">
+    <value>SavePanel</value>
+  </data>
+  <data name="&gt;&gt;TopPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ClassItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SavePanel.Parent" xml:space="preserve">
+    <value>MainPanel</value>
+  </data>
+  <data name="&gt;&gt;Confirm.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SaveDirect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;Logistical.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MainPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Logistical.Name" xml:space="preserve">
+    <value>Logistical</value>
+  </data>
+  <data name="&gt;&gt;Confirm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ClassChoose.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Confirm.Text" xml:space="preserve">
+    <value>确定</value>
+  </data>
+  <data name="Confirm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 21</value>
+  </data>
+  <data name="SavePathLabel.Text" xml:space="preserve">
+    <value>保存路径:</value>
+  </data>
+  <data name="&gt;&gt;Cancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ClassItem.Name" xml:space="preserve">
+    <value>ClassItem</value>
+  </data>
+  <data name="SavePathLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 0</value>
+  </data>
+  <data name="SavePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="SavePathLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ClassItem.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;Cancel.Parent" xml:space="preserve">
+    <value>SavePanel</value>
+  </data>
+  <data name="Production.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 90</value>
+  </data>
+  <data name="MainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Weapon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 308</value>
+  </data>
+  <data name="Custom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 404</value>
+  </data>
+  <data name="Production.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="SavePath.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Cancel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ClassChoose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 502</value>
+  </data>
+  <data name="&gt;&gt;ClassChoose.Parent" xml:space="preserve">
+    <value>TopPanel</value>
+  </data>
+  <data name="&gt;&gt;SavePath.Name" xml:space="preserve">
+    <value>SavePath</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="SavePanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Custom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 90</value>
+  </data>
+  <data name="&gt;&gt;Production.Parent" xml:space="preserve">
+    <value>ClassChoose</value>
+  </data>
+  <data name="Custom.Text" xml:space="preserve">
+    <value>自定义</value>
+  </data>
+  <data name="&gt;&gt;Cancel.Name" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="TopPanel.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SavePath.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Custom.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Logistical.Parent" xml:space="preserve">
+    <value>ClassChoose</value>
+  </data>
+  <data name="Logistical.Text" xml:space="preserve">
+    <value>物流系统</value>
+  </data>
+  <data name="&gt;&gt;Production.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Metarial.Text" xml:space="preserve">
+    <value>原材料</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MainPanel.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;MainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TopPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 505</value>
+  </data>
+  <data name="ClassItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 3</value>
+  </data>
+  <data name="SavePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 511</value>
+  </data>
+  <data name="Logistical.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 90</value>
+  </data>
+  <data name="SaveDirect.Text" xml:space="preserve">
+    <value>浏览...</value>
+  </data>
+  <data name="Production.Text" xml:space="preserve">
+    <value>设备</value>
+  </data>
+  <data name="&gt;&gt;Weapon.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Confirm.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ClassChoose.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="SavePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>110, 3</value>
+  </data>
+  <data name="MainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>784, 568</value>
+  </data>
+  <data name="SavePanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&Lt;?xml version="1.0" encoding="utf-16"?&gt;&Lt;TableLayoutSettings&gt;&Lt;Controls&gt;&Lt;Control Name="Confirm" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&Lt;Control Name="SavePathLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&Lt;Control Name="SavePath" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&Lt;Control Name="SaveDirect" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&Lt;Control Name="Cancel" Row="1" RowSpan="1" Column="3" ColumnSpan="1" /&gt;&Lt;/Controls&gt;&Lt;Columns Styles="Percent,16.71875,Percent,83.28125,Absolute,70,Absolute,68" /&gt;&Lt;Rows Styles="Percent,50,Percent,50" /&gt;&Lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;Weapon.Name" xml:space="preserve">
+    <value>Weapon</value>
+  </data>
+  <data name="Weapon.Text" xml:space="preserve">
+    <value>武器装备</value>
+  </data>
+  <data name="&gt;&gt;SaveDirect.Parent" xml:space="preserve">
+    <value>SavePanel</value>
+  </data>
+  <data name="TopPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 3</value>
+  </data>
+  <data name="&gt;&gt;SavePathLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SaveDirect.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TopPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&Lt;?xml version="1.0" encoding="utf-16"?&gt;&Lt;TableLayoutSettings&gt;&Lt;Controls&gt;&Lt;Control Name="ClassChoose" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&Lt;Control Name="ClassItem" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&Lt;/Controls&gt;&Lt;Columns Styles="Percent,14.13882,Percent,85.86118" /&gt;&Lt;Rows Styles="Percent,50" /&gt;&Lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="SaveDirect.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 3</value>
+  </data>
+  <data name="SavePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>778, 54</value>
+  </data>
+  <data name="Metarial.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="ClassChoose.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 0</value>
+  </data>
+  <data name="&gt;&gt;SavePanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SavePath.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SavePathLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;Weapon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SaveDirect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 21</value>
+  </data>
+  <data name="MainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="SaveDirect.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Logistical.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;Custom.Name" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="&gt;&gt;Custom.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SavePathLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="ClassChoose.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Metarial.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="SavePathLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Logistical.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Logistical.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="Custom.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Metarial.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Custom.Parent" xml:space="preserve">
+    <value>ClassChoose</value>
+  </data>
+  <data name="Confirm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>643, 30</value>
+  </data>
+  <data name="&gt;&gt;Confirm.Parent" xml:space="preserve">
+    <value>SavePanel</value>
+  </data>
+  <data name="Cancel.Text" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="&gt;&gt;Production.Name" xml:space="preserve">
+    <value>Production</value>
+  </data>
+  <data name="MainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Production.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 212</value>
+  </data>
+  <data name="&gt;&gt;Production.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TopPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Metarial.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 116</value>
+  </data>
+  <data name="&gt;&gt;SavePathLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Production.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ClassItem.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Metarial.Name" xml:space="preserve">
+    <value>Metarial</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>784, 568</value>
+  </data>
+  <data name="Custom.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="Weapon.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;SavePathLabel.Parent" xml:space="preserve">
+    <value>SavePanel</value>
+  </data>
+  <data name="SavePath.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;SavePanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Weapon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 90</value>
+  </data>
+  <data name="ClassItem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 6, 0</value>
+  </data>
+  <data name="Cancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 21</value>
+  </data>
+  <data name="ClassItem.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SaveDirect.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TopPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 0, 0</value>
+  </data>
+  <data name="Metarial.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 90</value>
+  </data>
+  <data name="ClassItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>665, 502</value>
+  </data>
+  <data name="&gt;&gt;Custom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ClassChoose.Text" xml:space="preserve">
+    <value>类型选择</value>
+  </data>
+  <data name="TopPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;Weapon.Parent" xml:space="preserve">
+    <value>ClassChoose</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, CuLture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
+</root>

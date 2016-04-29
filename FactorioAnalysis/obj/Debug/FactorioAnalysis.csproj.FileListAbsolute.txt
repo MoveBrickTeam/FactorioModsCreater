@@ -1,0 +1,7 @@
+G:\FactorioModsCreater\FactorioAnalysis\bin\Debug\FactorioAnalysis.dll
+G:\FactorioModsCreater\FactorioAnalysis\bin\Debug\FactorioAnalysis.pdb
+G:\FactorioModsCreater\FactorioAnalysis\bin\Debug\lua51.dll
+G:\FactorioModsCreater\FactorioAnalysis\bin\Debug\LuaInterface.dll
+G:\FactorioModsCreater\FactorioAnalysis\obj\Debug\FactorioAnalysis.dll
+G:\FactorioModsCreater\FactorioAnalysis\obj\Debug\FactorioAnalysis.pdb
+G:\FactorioModsCreater\FactorioAnalysis\obj\Debug\FactorioAnalysis.csprojResolveAssemblyReference.cache

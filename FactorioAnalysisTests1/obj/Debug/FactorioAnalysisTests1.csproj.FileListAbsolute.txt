@@ -1,0 +1,11 @@
+G:\FactorioModsCreater\FactorioAnalysisTests1\bin\Debug\FactorioAnalysisTests1.dll
+G:\FactorioModsCreater\FactorioAnalysisTests1\bin\Debug\FactorioAnalysisTests1.pdb
+G:\FactorioModsCreater\FactorioAnalysisTests1\bin\Debug\FactorioAnalysis.dll
+G:\FactorioModsCreater\FactorioAnalysisTests1\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+G:\FactorioModsCreater\FactorioAnalysisTests1\bin\Debug\LuaInterface.dll
+G:\FactorioModsCreater\FactorioAnalysisTests1\bin\Debug\lua51.dll
+G:\FactorioModsCreater\FactorioAnalysisTests1\bin\Debug\FactorioAnalysis.pdb
+G:\FactorioModsCreater\FactorioAnalysisTests1\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+G:\FactorioModsCreater\FactorioAnalysisTests1\obj\Debug\FactorioAnalysisTests1.csprojResolveAssemblyReference.cache
+G:\FactorioModsCreater\FactorioAnalysisTests1\obj\Debug\FactorioAnalysisTests1.dll
+G:\FactorioModsCreater\FactorioAnalysisTests1\obj\Debug\FactorioAnalysisTests1.pdb
