@@ -16,3 +16,6 @@ G:\FactorioModsCreater\FactorioModsCreater\obj\Debug\FactorioModsCreater.csproj.
 G:\FactorioModsCreater\FactorioModsCreater\obj\Debug\en\FactorioModsCreater.resources.dll
 G:\FactorioModsCreater\FactorioModsCreater\obj\Debug\FactorioModsCreater.exe
 G:\FactorioModsCreater\FactorioModsCreater\obj\Debug\FactorioModsCreater.pdb
+G:\Git\FactorioModsCreater\FactorioModsCreater\bin\Debug\FactorioModsCreater.exe.config
+G:\Git\FactorioModsCreater\FactorioModsCreater\obj\Debug\FactorioModsCreater.exe
+G:\Git\FactorioModsCreater\FactorioModsCreater\obj\Debug\FactorioModsCreater.pdb
