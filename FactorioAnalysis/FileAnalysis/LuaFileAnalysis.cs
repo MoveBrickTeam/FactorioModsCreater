@@ -23,6 +23,39 @@ namespace FactorioAnalysis.FileAnalysis
             Lua.DoString(setLuaPath);
         }
 
+        protected static void XmlNodeSort(XmlElement root)
+        {
+            if (root.ChildNodes.Count > 0)
+            {
+                Sort(root);
+                foreach (var child in root.ChildNodes)
+                {
+                    XmlElement element = child as XmlElement;
+                    if (element != null)
+                    {
+                        XmlNodeSort(element);
+                    }
+
+                }
+            }
+        }
+
+        protected static void Sort(XmlElement xe)
+        {
+            for (int i = 0; i < xe.ChildNodes.Count; i++)
+            {
+                for (int j = 1; j < xe.ChildNodes.Count - i; j++)
+                {
+                    string one = xe.ChildNodes[j - 1].Attributes?["order"].Value;
+                    string two = xe.ChildNodes[j].Attributes?["order"].Value;
+                    if (string.CompareOrdinal(one, two) <= 0) continue;
+                    XmlElement temp = (XmlElement)xe.ChildNodes[j];
+                    xe.ReplaceChild(xe.ChildNodes[j - 1], xe.ChildNodes[j]);
+                    xe.InsertBefore(temp, xe.ChildNodes[j - 1]);
+                }
+            }
+        }
+
         public abstract void AnalysisFile();
         public abstract void AnalysisTable(ListDictionary ld,XmlNode insertNode);
         public abstract void ExportXml();

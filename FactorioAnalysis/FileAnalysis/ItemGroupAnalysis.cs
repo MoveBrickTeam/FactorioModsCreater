@@ -63,9 +63,9 @@ namespace FactorioAnalysis.FileAnalysis
                 {
                     curNode.SetAttribute(entry.Key.ToString(), entry.Value.ToString());
                 }
-                if (lt["type"].ToString()=="item-group")//如果节点类型是group(group是分类细表的目录,类似于属与种中的属)
+                if (!lt.Contains("group"))//如果节点类型是group(group是分类细表的目录,类似于属与种中的属)
                 {
-
+                
                     XmlElement checkNode = (XmlElement) _outputDocument.SelectSingleNode("Root/" + lt["name"].ToString());
                     if (checkNode==null)//判断该节点是否存在
                     {
@@ -119,7 +119,7 @@ namespace FactorioAnalysis.FileAnalysis
             _outputDocument.Save(xmlOutPut);
         }
 
-        private void XmlNodeSort(XmlElement root)
+        /*private void XmlNodeSort(XmlElement root)
         {
             if (root.ChildNodes.Count>0)
             {
@@ -150,6 +150,6 @@ namespace FactorioAnalysis.FileAnalysis
                     xe.InsertBefore(temp, xe.ChildNodes[j - 1]);
                 }
             }
-        }
+        }*/
     }
 }
