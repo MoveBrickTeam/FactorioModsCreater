@@ -7,23 +7,19 @@ using LuaInterface;
 
 namespace FactorioAnalysis.FileAnalysis
 {
-    public class ItemGroupAnalysis:LuaFileAnalysis
+    public class ItemGroupAnalysis : LuaFileAnalysis
     {
         private static ListDictionary _ld;
-        private static XmlDocument _outputDocument=new XmlDocument();
-        private static XmlElement Root = _outputDocument.CreateElement("Root");
-        
-        public ItemGroupAnalysis() 
-        {
-        }
+        private static readonly XmlDocument OutputDocument = new XmlDocument();
+        private static readonly XmlElement Root = OutputDocument.CreateElement("Root");
 
         public override void AnalysisFile()
         {
             Lua.DoFile(FolderSet.BasePath + "prototypes\\item\\item-groups.lua");
             Lua.DoFile(FolderSet.BasePath + "prototypes\\item\\demo-item-groups.lua");
             _ld = Lua.GetTableDict(Lua.GetTable("data.raw"));
-            _outputDocument.AppendChild(Root);
-            AnalysisTable(_ld,Root);
+            OutputDocument.AppendChild(Root);
+            AnalysisTable(_ld, Root);
             ExportXml();
         }
 
@@ -46,72 +42,72 @@ namespace FactorioAnalysis.FileAnalysis
              * 如果没有name键,舍弃当前lt,遍历该lt下的键值对,每找到一个值为table的,就进入递归
              * 并且递归时的insertNode就是上级insertNode
              */
-             /*TODO
+            /*TODO
               *排序问题,如何解决乱序插入?
               * 与当前已存在的节点的order属性做对比,如果当前要插入的节点的order值小于已存在Order的最小值,向前插,否则向后插;
               * 
               */
             if (lt.Contains("name"))
             {
-                XmlElement curNode = _outputDocument.CreateElement(lt["name"].ToString());
+                XmlElement curNode = OutputDocument.CreateElement(lt["name"].ToString());
                 foreach (DictionaryEntry entry in lt)
                 {
                     curNode.SetAttribute(entry.Key.ToString(), entry.Value.ToString());
                 }
-                if (!lt.Contains("group"))//如果节点类型是group(group是分类细表的目录,类似于属与种中的属)
+                if (!lt.Contains("group")) //如果节点类型是group(group是分类细表的目录,类似于属与种中的属)
                 {
-                
-                    XmlElement checkNode = (XmlElement) _outputDocument.SelectSingleNode("Root/" + lt["name"].ToString());
-                    if (checkNode==null)//判断该节点是否存在
+                    XmlElement checkNode =
+                        (XmlElement) OutputDocument.SelectSingleNode("Root/" + lt["name"]);
+                    if (checkNode == null) //判断该节点是否存在
                     {
                         //此处应有排序
-                        insertNode.AppendChild(curNode);//不存在就在该节点的上级节点新建节点
+                        insertNode.AppendChild(curNode); //不存在就在该节点的上级节点新建节点
                     }
-                    else//存在
+                    else //存在
                     {
                         foreach (XmlAttribute attribute in curNode.Attributes)
                         {
-                            checkNode.SetAttribute(attribute.Name,attribute.Value);//如果存在,将curNode中的所有Attr复制给Check
+                            checkNode.SetAttribute(attribute.Name, attribute.Value); //如果存在,将curNode中的所有Attr复制给Check
                         }
                     }
                 }
-                else//如果是item-subgroup(种)
+                else //如果是item-subgroup(种)
                 {
-                    XmlElement check = (XmlElement) _outputDocument.SelectSingleNode("Root/" + lt["group"]);//判断当前物品类型的属是否存在
-                    if (check==null)//不存在
+                    XmlElement check = (XmlElement) OutputDocument.SelectSingleNode("Root/" + lt["group"]);
+                        //判断当前物品类型的属是否存在
+                    if (check == null) //不存在
                     {
                         //此处应有排序
-                        check = _outputDocument.CreateElement(lt["group"].ToString());
-                        Root.AppendChild(check);//根节点下添加该属
+                        check = OutputDocument.CreateElement(lt["group"].ToString());
+                        Root.AppendChild(check); //根节点下添加该属
                     }
                     //此处应由排序
-                    check.AppendChild(curNode);//将当前节点添加到属节点下
+                    check.AppendChild(curNode); //将当前节点添加到属节点下
                 }
             }
             else
             {
                 foreach (var value  in lt.Values)
                 {
-                    LuaTable table=value as LuaTable;
-                    if (table!=null)
+                    LuaTable table = value as LuaTable;
+                    if (table != null)
                     {
-                        AnalysisTable(Lua.GetTableDict(table),insertNode);
+                        AnalysisTable(Lua.GetTableDict(table), insertNode);
                     }
                 }
             }
-
         }
 
         public override void ExportXml()
         {
             string xmlOutPut = Application.StartupPath + "\\Data\\Item_Group.xml";
-            DirectoryInfo check=new DirectoryInfo(Application.StartupPath+"\\Data");
+            DirectoryInfo check = new DirectoryInfo(Application.StartupPath + "\\Data");
             if (!check.Exists)
             {
                 check.Create();
             }
             XmlNodeSort(Root);
-            _outputDocument.Save(xmlOutPut);
+            OutputDocument.Save(xmlOutPut);
         }
     }
 }

@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FactorioAnalysis.FileAnalysis;
 using FactorioModsCreater.ApplicationInit;
+using log4net;
+using log4net.Repository.Hierarchy;
 
 namespace FactorioModsCreater
 {
-    static class Program
+    internal static class Program
     {
         public static string lang = "zh_CN";
         /// <summary>
@@ -26,15 +28,15 @@ namespace FactorioModsCreater
             {
                 FolderSelect folderSelect=new FolderSelect();
                 folderSelect.ShowDialog();
-                showMain();
+                ShowMain();
             }
             else
             {
-                showMain();
+                ShowMain();
             }
         }
 
-        private static void showMain()
+        private static void ShowMain()
         {
             Main main = new Main();
             FormInit fi = new FormInit();
