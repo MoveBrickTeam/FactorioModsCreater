@@ -118,43 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Confirm.Text" xml:space="preserve">
-    <value>Ok</value>
+    <value>OK</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="SavePathLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 0</value>
+    <value>6, 11</value>
   </data>
   <data name="SavePathLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 27</value>
+    <value>68, 10</value>
   </data>
   <data name="SavePathLabel.Text" xml:space="preserve">
     <value>Save Path:</value>
   </data>
   <data name="SaveDirect.Text" xml:space="preserve">
-    <value>Select..</value>
+    <value>Browse..</value>
   </data>
   <data name="Cancel.Text" xml:space="preserve">
     <value>Cancel</value>
   </data>
   <data name="ClassChoose.Text" xml:space="preserve">
     <value>Type</value>
-  </data>
-  <data name="Custom.Text" xml:space="preserve">
-    <value>Custom</value>
-  </data>
-  <data name="Weapon.Text" xml:space="preserve">
-    <value>Weapon</value>
-  </data>
-  <data name="Metarial.Text" xml:space="preserve">
-    <value>Metarial</value>
-  </data>
-  <data name="Production.Text" xml:space="preserve">
-    <value>Production</value>
-  </data>
-  <data name="Logistical.Text" xml:space="preserve">
-    <value>Logistical</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>New</value>
   </data>
 </root>
